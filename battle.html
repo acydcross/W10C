@@ -12,9 +12,9 @@
     <h1 id="title">You have chosen:</h1>
     <div id="role-container"></div>
     <div id="skills">
-        <h2 id="skill1" class="skill" onclick="skillOne()">Skill 1</h2>
-        <h2 id="skill2"  class="skill" onclick="skillTwo()">Skill 2</h2>
-        <h2 id="skill3"  class="skill" onclick="skillThree()">Skill 3</h2>
+        <h2 id="skill1" class="skill" onclick="skillOne()">Basic Attack</h2>
+        <h2 id="skill2"  class="skill" onclick="skillTwo()">Risky Attack</h2>
+        <h2 id="skill3"  class="skill" onclick="skillThree()">Safe Attack</h2>
         <h3 id="user-current-hp"></h3>
         <h3 id="boss-current-hp"></h3>
         <h3 id="result"></h3>
@@ -25,7 +25,7 @@
     </div>
     <div><p id="attack-dealt"></p></div>
     <div></div>
-    <h3 onclick="clearRole()">Select a new role</h3>
+    <h3 id="new-role" onclick="clearRole()">Select a new role</h3>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/battle.js"></script>
 </body>

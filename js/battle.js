@@ -32,8 +32,36 @@ function skillOne() {
 
     if(bossCurrentHP <= 0) {
         winner.innerHTML = "<h3> YOU WON !! </h3>";
-    } else {
+    } else if (userCurrentHP <= 0) {
         winner.innerHTML = "<h3> YOU LOST !! </h3>";
+    } else {
     }
 }
 
+function skillTwo() {
+    bossCurrentHP = bossMaxHP.innerHTML - Math.floor((Math.random() * 10) + 3);
+    bossMaxHP.innerHTML = bossCurrentHP;
+    userCurrentHP = userMaxHP.innerHTML - Math.floor((Math.random() * 8) + 5);
+    userMaxHP.innerHTML = userCurrentHP;
+
+    if(bossCurrentHP <= 0) {
+        winner.innerHTML = "<h3> YOU WON !! </h3>";
+    } else if (userCurrentHP <= 0) {
+        winner.innerHTML = "<h3> YOU LOST !! </h3>";
+    } else {
+    }
+}
+
+function skillThree() {
+    bossCurrentHP = bossMaxHP.innerHTML - Math.floor((Math.random() * 2) + 2);
+    bossMaxHP.innerHTML = bossCurrentHP;
+    userCurrentHP = userMaxHP.innerHTML - Math.floor((Math.random() * 2) + 2);
+    userMaxHP.innerHTML = userCurrentHP;
+
+    if(bossCurrentHP <= 0) {
+        winner.innerHTML = "<h3> YOU WON !! </h3>";
+    } else if (userCurrentHP <= 0) {
+        winner.innerHTML = "<h3> YOU LOST !! </h3>";
+    } else {
+    }
+}
