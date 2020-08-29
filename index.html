@@ -3,9 +3,31 @@
 <head>
     <meta charset=UTF-8>
     <meta name=viewport content=width=device-width, initial-scale=1.0>
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <title>Choose your role</title>
 </head>
-<body>
+<body id="body-container">
     
+    <h1 id="title">Choose your role:</h1>
+
+    <div id="selection-container">
+        <div id="Tanker" class="role" onclick="addTank('tank')">
+            <h2>Tanker</h2>
+            <img src="https://ffxiv.consolegameswiki.com/mediawiki/images/thumb/c/c0/Paladin_concept_art.jpg/250px-Paladin_concept_art.jpg" alt="a meatshield tanker">
+        </div>
+        <div id="Healer" class="role" onclick="addHeal('heal')">
+            <h2>Healer</h2>
+            <img src="https://ffxiv.consolegameswiki.com/mediawiki/images/thumb/d/d0/White_Mage_concept_art.jpg/250px-White_Mage_concept_art.jpg" alt="a lifesaving healer">
+        </div>
+        <div id="Damager" class="role" onclick="addDamage('damage')">
+            <h2>Damager</h2>
+            <img src="https://ffxiv.consolegameswiki.com/mediawiki/images/thumb/2/29/Dragoon_concept_art.jpg/250px-Dragoon_concept_art.jpg" alt="a deadly damage dealer">
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap" rel="stylesheet">
+    <title>Battle</title>
+</head>
+<body id="body-container">
+    <h1 id="title">You have chosen:</h1>
+    <div id="selection-container"></div>
+    <div id="skill1" class="skill" onclick="skillOne()"><h2>Skill 1</h2></div>
+    <div id="skill2"  class="skill" onclick="skillTwo()"><h2>Skill 2</h2></div>
+    <div id="skill3"  class="skill" onclick="skillThree()"><h2>Skill 3</h2></div>
+    <div></div>
+    <div><p id="attack-dealt"></p></div>
+    <div></div>
+    <h3 onclick="clearRole()">Select a new role</h3>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/battle.js"></script>
+</body>
+</html>
